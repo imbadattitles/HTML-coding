@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap')
+
+html
+	overflow-x: hidden !important
+
+* 
+	box-sizing: border-box
+
+button
+	cursor: pointer
+
+main
+	overflow-x: hidden !important
+
+body 
+	font-family: 'Roboto Mono', monospace
+	overflow-x: hidden !important
+	background: #161616
+
+a 
+	text-decoration: none
+
+
+.__container
+	max-width: 1240px
+	padding: 0 20px
+	margin: 0 auto
+
+
+
+
+.header__burger
+	display: none
+	@media screen and (max-width: 760px)
+		display: block
+		position: relative
+		width: 60px
+		height: 60px
+		background: #C50077
+		border-radius: 5px
+		@media screen and (max-width: 390px)
+			width: 60px
+			height: 60px
+
+.header__burger_line1
+	position: absolute
+	top: 60%
+	width: 50%
+	height: 5px
+	left: 20px
+	background: white
+	border-radius: 5px
+	
+
+.header__burger_line2
+	position: absolute
+	top: 30%
+	width: 70%
+	height: 5px
+	left: 9px
+	background: white
+	border-radius: 5px
+	
+
+.first-row
+	margin-top: 30px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-wrap: wrap
+	@media screen and (max-width: 960px)
+		height: 100px
+		justify-content: start
+		@media screen and (max-width: 960px)
+			height: 150px
+			@media screen and (max-width: 760px)
+				transform: translateY(-100%)
+				z-index: 1000
+				margin-top: 0
+				position: fixed 
+				background: black
+				width: 100vw
+				height: 100%
+				padding: 30px
+				left: 0
+				top: 0
+				display: block
+				transition: 1s
+
+.first-row-see
+	transform: translateY(0%)
+
+.header__logo
+	margin-top: -20px
+	@media screen and (max-width: 960px)
+		margin-right: 30px
+		@media screen and (max-width: 760px)
+			margin-top: 0
+
+
+.header__icons
+	display: flex
+	width: 225px
+	justify-content: space-between
+	filter: drop-shadow(0px 0px 30px #C50077)
+	margin-right: 10px
+	@media screen and (max-width: 760px)
+		width: 335px
+		margin-top: 40px
+		@media screen and (max-width: 400px)
+		width: 300px
+
+.header__icons-icon
+	margin-right: 10px
+	width: 20px
+	height: 20px
+	object-fit: contain
+	filter: drop-shadow(0px 0px 30px #C50077)
+	@media screen and (max-width: 760px)
+		margin-right: 20px
+		width: 30px
+		height: 30px
+
+.header__nav
+	display: flex
+	justify-content: space-between
+	@media screen and (max-width: 760px)
+		display: block
+
+
+.header__list
+	display: flex
+	justify-content: space-between
+	width: 520px
+	color: white
+	font-weight: 400
+	font-size: 18px
+	line-height: 24px
+	color: #B6B6B6
+	@media screen and (max-width: 760px)
+		line-height: 130%
+		font-size: 24px
+		margin-top: 50px
+		display: block
+		
+
+
+
+	a 
+		color: inherit
+
+.header__list-item
+	@media screen and (max-width: 760px)
+		margin-bottom: 40px
+		margin-right: 20px
+
+.header__Select
+	width: 65px
+	position: relative
+	border: 3px solid #48052E
+	filter: drop-shadow(0px 0px 35px #C50077)
+	border-radius: 10px
+	background: transparent
+	font-weight: 400
+	font-size: 18px
+	line-height: 24px
+	text-transform: uppercase
+	color: #B6B6B6
+	padding: 3px 10px
+	outline: none
+	text-align: right
+	appearance: none
+	background-image: url(../img/svg/select.svg)
+	background-repeat: no-repeat
+	background-position: center left 5px
+	@media screen and (max-width: 960px)
+		margin-left: 50px
+		@media screen and (max-width: 760px)
+			margin-left: 0
+
+.header__close
+	display: none
+	@media screen and (max-width: 760px)
+		display: block
+		top: 30px
+		right: 30px
+		position: absolute
+		width: 60px
+		height: 60px
+		background: white
+		border-radius: 5px
+		@media screen and (max-width: 390px)
+			right: 20px
+			width: 50px
+			height: 50px
+
+.header__close_line1
+	position: absolute
+	top: 50%
+	width: 100%
+	height: 5px
+	background: black
+	transform: rotate(45deg)
+
+.header__close_line2
+	position: absolute
+	top: 50%
+	width: 100%
+	height: 5px
+	background: black
+	transform: rotate(-45deg)
+
+.header__option
+	background: #48052E
+	color: black
+	outline: none
+	border: none
+
+.second-row
+	margin-top: 25px
+	max-width: 860px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-left: auto
+	@media screen and (max-width: 960px)
+		justify-content: start
+		margin-left: 0
+
+.header__list-item:hover
+	color: white
+
+
+.header__button
+	font-family: 'Roboto Mono', monospace
+	display: block
+	font-weight: 400
+	font-size: 23px
+	line-height: 130%
+	color: #FFFFFF
+	padding: 4px 9px 6px 13px
+	text-align: center
+	border: 3px solid #C50077
+	filter: drop-shadow(0px 0px 35px #C50077)
+	border-radius: 10px
+	display: flex
+	align-items: center
+	transition: .3s
+	@media screen and (max-width: 960px)
+		margin-right: 10px
+		margin-bottom: 10px
+		@media screen and (max-width: 390px)
+			padding: 3px 7px 4px 9px
+
+.header__button:hover
+	background: #C50077
+
+.header__button:hover .header__button-subtext
+	color: white
+
+.header__button:hover .header__button-small
+	color: white
+
+.header__button_active
+	background: #C50077
+	color: white !important
+
+.header__button-subtext
+	display: block
+	font-weight: 700
+	font-size: 10px
+	line-height: 100%
+	color: #808080
+	
+.firstscreen
+
+.header__button-small
+	font-weight: 700
+	font-size: 10px
+	line-height: 130%
+	letter-spacing: 0.02em
+	color: #C50077
+	margin-left: 10px
+
+.blur-circle5
+	top: 0
+	right: 0
+	position: absolute
+	border-radius: 50%
+	width: 160px
+	height: 170px
+	background: #9D129F
+	filter: blur(128px)
+	z-index: -5
+
+.wallet
+	padding: 10px 20px
+	font-weight: 700
+	font-size: 15px
+	line-height: 20px
+	color: #FFFFFF
+
+
+.SWAP__youreWallet
+	margin: 0 auto 
+	margin-top: 100px 
+	margin-bottom: 30px
+	max-width: 420px
+	display: flex 
+	align-items: center
+	border: 1px solid #2C2C2C
+	border-radius: 44px
+	padding: 10px 20px
+	@media screen and (max-width: 425px)
+		margin-top: 50px
+		border: 2px solid #2C2C2C
+
+.SWAP__youreWallet-icon
+	width: 40px
+	height: 40px
+
+.SWAP__youreWallet-text
+	font-weight: 400
+	font-size: 34px
+	line-height: 130%
+	color: #666666
+	margin-left: 13px
+
+.SWAP__SWAP
+	margin: auto
+	padding: 40px 35px
+	border: 2px solid #C50077
+	border-radius: 35px
+	max-width: 530px
+	margin-bottom: 140px
+	@media screen and (max-width: 425px)
+		padding: 20px 10px
+
+.SWAP__SWAP-buttons
+	display: flex 
+	justify-content: space-between
+	margin-bottom: 45px
+	@media screen and (max-width: 425px)
+		margin-bottom: 10px
+
+.SWAP__SWAP-button_swap
+	font-family: 'Roboto Mono'
+	width: 49%
+	padding: 14px
+	font-weight: 400
+	font-size: 24px
+	line-height: 130%
+	color: #C50077
+	text-shadow: 0px 0px 28px #C50077
+	border: 2px solid #C50077
+	border-radius: 10px
+	background: none
+
+.SWAP__SWAP-button_swap:hover
+	color: white
+	background: #C50077
+
+.SWAP__SWAP-button_Liquidity
+	font-family: 'Roboto Mono'
+	width: 49%
+	padding: 14px
+	font-weight: 400
+	font-size: 24px
+	line-height: 130%
+	color: #B6B6B6
+	border: 2px solid #393939
+	border-radius: 10px
+	background: none
+
+.SWAP__SWAP-button_Liquidity:hover
+	color: white
+	background: #393939
+
+.SWAP__SWAP-input
+	display: block
+	border: none 
+	outline: none
+	background: none
+	width: 100%
+	padding: 0
+	color: #C50077
+	font-size: 18px
+
+.SWAP__SWAP-inputblock-text
+	font-weight: 400
+	font-size: 18px
+	line-height: 130%
+	color: #686868
+	margin-bottom: 10px
+
+.SWAP__SWAP-inputblock
+	display: flex
+	justify-content: space-between
+	align-items: center
+	align-content: center
+	width: 100%
+	background: #1E1E1E
+	border-radius: 10px
+	padding: 14px
+	margin-bottom: 8px
+
+.SWAP__SWAP-input::placeholder
+	font-weight: 400
+	font-size: 18px
+	line-height: 130%
+	color: #B6B6B6
+
+.SWAP__SWAP-inputblock-select
+	display: block
+	font-family: 'Roboto Mono'
+	background: none
+	border: none
+	font-weight: 400
+	font-size: 18px
+	line-height: 24px
+	color: #B6B6B6
+	outline: none
+
+.SWAP__SWAP-form
+	display: flex
+	flex-direction: column
+
+.block__arrow
+	margin: auto
+	margin-bottom: 8px
+
+.hidden 
+	display: none
+
+.input__submit
+	margin-top: 32px
+	padding: 14px
+	width: 100%
+	border: 4px solid #C50077
+	filter: drop-shadow(0px 0px 35px #C50077)
+	border-radius: 10px
+	font-weight: 700
+	font-size: 24px
+	line-height: 130%
+	text-align: center
+	color: #C50077
+	text-shadow: 0px 0px 35px #C50077
+	background: none
+	@media screen and (max-width: 425px)
+		margin-top: 10px
+
+.dd-option-image, .dd-selected-image
+	width: 30px
+	height: 30px
+	margin-right: 10px !important
+
+.dd-selecter-text
+	color: white !important
+	line-height: 130%
+
+.dd-select
+	border: none !important
+	border-radius: 0 !important
+
+.element.style
+	background: none !important
+
+.dd-selected
+	padding: 0 !important
+	display: flex !important
+	align-items: center
+	font-style: normal
+	font-weight: 400 !important
+	font-size: 18px
+	line-height: 130%
+	color: #B6B6B6
+
+.dd-pointer
+	border: solid 10px transparent !important
+	border-top: solid 10px #C50077 !important
+
+.dd-pointer-up
+	border-bottom: solid 10px #C50077 !important
+	margin-top: -8px
+
+.dd-option
+	display: flex !important
+	align-items: center !important
+
+.input__submit:hover
+	color: white
+	background: #C50077
+
+.blurcircle1
+	position: absolute
+	width: 280px
+	height: 300px
+	background: #9D129F
+	filter: blur(166px)
+	bottom: 40px
+	left: -140px
+	border-radius: 50%
+	z-index: -1
+
+.blurcircle2
+	position: absolute
+	width: 900px
+	height: 1100px
+	background: #C50077
+	opacity: 0.4
+	filter: blur(450px)
+	bottom: -400px
+	right: -540px
+	border-radius: 50%
+	z-index: -1
+
+
+.footer
+	position: relative
+	border-top: 2px solid #C50077
+	box-shadow: 0px 0px 8px #C50077
+
+.footer:before 
+	content: ''
+	position: absolute
+	width: 100%
+	height: 100%
+	z-index: -1
+	background: #C50077
+	opacity: 0.3
+	filter: blur(250px)
+
+.footer__row1
+	margin-top: 50px
+	display: flex
+	justify-content: space-between
+	@media screen and (max-width: 960px)
+		flex-wrap: wrap
+		margin-top: 0
+
+.footer__column
+	max-width: 300px
+
+.footer__title
+	font-weight: 700
+	font-size: 24px
+	line-height: 32px
+	color: #FFFFFf
+	@media screen and (max-width: 960px)
+		margin-top: 30px
+
+	a 
+		color: inherit
+
+.footer__item
+	display: flex
+	align-items: center
+	font-weight: 400
+	font-size: 18px
+	line-height: 130%
+	color: #B6B6B6
+	margin-top: 15px
+	max-width: 300px
+
+	a 
+		color: inherit
+
+	a:hover 
+		color: white
+
+.footer__icon
+	margin-right: 15px
+
+.linksks
+	margin-bottom: 25px
+
+.footersmall
+	margin-left: 9px
+	font-weight: 400
+	font-size: 15px
+	line-height: 20px
+	color: #C50077
+
+.footer__row2
+	margin-top: 60px
+	display: flex
+	justify-content: space-between
+	padding-bottom: 40px
+	@media screen and (max-width: 425px)
+		display: none
+
+
+.footer__item2
+	display: flex
+	align-items: center
+	font-weight: 400
+	font-size: 18px
+	line-height: 130%
+	color: #B6B6B6
+	margin-right: 70px
+

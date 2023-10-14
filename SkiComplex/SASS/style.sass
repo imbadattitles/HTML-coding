@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap')
+
+html
+	overflow-x: hidden !important
+
+* 
+	box-sizing: border-box
+
+button
+	cursor: pointer
+	color: inherit
+	font-family: 'Roboto', sans-serif
+
+
+body 
+	font-family: 'Raleway', sans-serif
+	overflow-x: hidden !important
+	background: #FBFBFB
+
+a 
+	text-decoration: none
+	color: inherit
+
+main
+	position: relative
+	z-index: 0
+
+.__container
+	max-width: 1760px
+	margin: auto 
+	padding: 0 20px
+	@media screen and (max-width: 425px)
+		padding: 0 10px
+
+.header
+	box-shadow: 0px 4px 37px rgba(72, 194, 244, 0.5)
+	margin-bottom: 155px
+	position: relative
+	z-index: 20
+	background: white
+	@media screen and (max-width: 960px)
+		margin-bottom: 70px
+		@media screen and (max-width: 425px)
+			margin-bottom: 40px
+
+
+.header__row
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 70px
+	background: #FFFFFF
+	@media screen and (max-width: 960px)
+		flex-direction: column
+		align-items: flex-start
+		height: 100%
+		padding-bottom: 20px
+
+	
+
+.header__logo
+	cursor: pointer
+	display: flex
+	align-items: center
+	@media screen and (max-width: 960px)
+		margin-top: 10px
+		margin-bottom: 20px
+
+.logo
+	margin-right: 6px
+
+.header__logo-shape
+	display: flex
+	width: 3px
+	height: 40px
+	background: #497A9A
+	border-radius: 12px
+	margin-right: 6px
+
+.header__logo-title
+	font-weight: 800
+	font-size: 18px
+	line-height: 130%
+	color: #467B9B
+	@media screen and (max-width: 425px)
+		font-size: 16px
+
+.header__right
+	height: 100%
+	width: 960px
+	display: flex
+	justify-content: space-between
+	@media screen and (max-width: 960px)
+		flex-direction: column
+		width: 100%
+
+.header__map
+	display: flex 
+	width: 465px
+	justify-content: space-between
+	@media screen and (max-width: 960px)
+		width: 100%
+		margin-bottom: 20px
+
+.header__item
+	cursor: pointer
+	display: flex 
+	align-items: center 
+	font-weight: 500
+	font-size: 16px
+	line-height: 130%
+	color: #59B3EA
+	@media screen and (max-width: 425px)
+		font-size: 14px
+
+.header__arrow
+	margin-left: 3px
+	width: 9px
+	height: 9px
+	background-size: contain
+	background-repeat: no-repeat
+	background-image: url(../img/svg/header__arrow.svg)
+
+
+.header__right-right
+	display: flex
+	white-space: nowrap
+	@media screen and (max-width: 960px)
+		width: 100%
+		justify-content: space-between
+		@media screen and (max-width: 360px)
+			flex-direction: column
+
+.header__login
+	display: flex
+	align-items: center
+	font-weight: 500
+	font-size: 16px
+	line-height: 130%
+	color: #407B9F
+	margin-right: 30px
+	@media screen and (max-width: 425px)
+		font-size: 14px
+		margin-right: 10px
+		@media screen and (max-width: 360px)
+			margin-bottom: 20px
+
+.header__login-icon
+	margin-right: 5px
+	width: 20px
+	height: 20px
+	background-size: contain
+	background-repeat: no-repeat
+	background-image: url(../img/svg/header__login.svg)
+
+.header__phone
+	height: 100%
+	display: flex
+	align-items: center
+	padding: 0 20px
+	background: #407B9F
+	font-weight: 700
+	font-size: 16px
+	line-height: 130%
+	color: #FFFFFF
+	text-shadow: 0px 0px 8px #FFFFFF
+	@media screen and (max-width: 960px)
+		padding: 5px 15px
+		@media screen and (max-width: 425px)
+			font-size: 14px
+			@media screen and (max-width: 360px)
+				width: 140px
+
+.header__phone-icon
+	margin-right: 7px
+	width: 16px
+	height: 16px
+	background-size: contain
+	background-repeat: no-repeat
+	background-image: url(../img/svg/header__phone.svg)
+	filter: drop-shadow(0px 0px 8px #FFFFFF)
+
+
+.title__row
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 240px
+	@media screen and (max-width: 960px)
+		flex-direction: column
+		align-items: flex-start
+		@media screen and (max-width: 425px)
+			margin-bottom: 300px
+
+.title__title
+	position: relative
+	font-style: normal
+	font-weight: 800
+	font-size: 6vw
+	line-height: 130%
+	color: #407B9F
+	text-shadow: 0px 4px 37px rgba(72, 194, 244, 0.5)
+	margin-right: 30px
+	white-space: nowrap
+	@media screen and (max-width: 960px)
+		font-size: 86px
+		margin-bottom: 50px
+		@media screen and (max-width: 425px)
+			font-size: 54px
+			margin-bottom: 20px
+
+.title-shape
+	width: 240px
+	height: 240px
+	background-size: contain 
+	background-repeat: no-repeat
+	position: absolute
+	top: -40px
+	left: -80px
+	background-image: url(../img/title-shape.png)
+	z-index: -1
+	@media screen and (max-width: 1350px)
+		top: -60px
+		@media screen and (max-width: 425px)
+			top: -80px
+			left: -100px
+
+.title__shape2
+	width: 131px
+	height: 201px
+	background-size: contain 
+	background-repeat: no-repeat
+	position: absolute
+	top: -220px
+	left: 0px
+	background-image: url(../img/title__shape2.png)
+	z-index: -1
+
+.slider__shape
+	z-index: -1
+	width: 212px
+	height: 219px
+	background-size: contain 
+	background-repeat: no-repeat
+	position: absolute
+	top: -90px
+	right: -80px
+	background-image: url(../img/slider__shape.png)
+	opacity: 0.4
+
+.slider__shape2
+	z-index: -1
+	width: 204px
+	height: 204px
+	background-size: contain 
+	background-repeat: no-repeat
+	position: absolute
+	bottom: -90px
+	left: -90px
+	background-image: url(../img/slider__shape2.png)
+	opacity: 1
+
+
+.title__slider
+	margin-left: 60px
+	position: relative
+	filter: drop-shadow(0px 4px 37px rgba(72, 194, 244, 0.5))
+	width: 55%
+	@media screen and (max-width: 960px)
+		width: 80%
+		@media screen and (max-width: 425px)
+			width: 100%
+			margin-left: 0
+
+	
+
+.title__slide
+	max-width: 960px
+	max-height: 500px
+
+.slider1
+	max-width: 960px
+	max-height: 500px
+
+.title__slider-wrap
+	position: relative
+	display: flex
+	overflow: hidden
+	border-radius: 20px
+	max-width: 960px
+	max-height: 500px
+
+.title__weather
+	z-index: 10
+	position: absolute
+	right: 0
+	top: 0
+	padding: 15px
+	background: white
+	width: 240px
+	border-bottom-left-radius: 20px
+
+.title__weather-day
+	font-weight: 600
+	font-size: 14px
+	line-height: 130%
+	color: #407B9F
+	margin-bottom: 12px
+
+.title__weather-weathers
+	display: flex
+
+.title__weather-weather
+	margin-left: 25px
+	margin-right: 35px
+	display: flex 
+	flex-direction: column 
+	align-items: center
+
+.title__weather-m
+	margin-bottom: 5px
+	font-weight: 500
+	font-size: 12px
+	line-height: 14px
+	color: #000000
+
+.title__weather-icon
+	width: 31px
+	height: 31px
+	background-repeat: no-repeat
+	background-size: contain
+	background-image: url(../img/svg/title__weather-icon.svg)
+	margin-bottom: 3px
+
+.title__weather-cifer
+	font-weight: 500
+	font-size: 16px
+	line-height: 130%
+	color: #000000
+
+.title__slider-grad
+	z-index: 9
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 70px
+	background: linear-gradient(360deg, #407B9F 0%, rgba(64, 123, 159, 0) 100%)
+
+.slider1
+	position: relative
+	z-index: 6
+	width: 100%
+
+.slider1.owl-theme .owl-nav
+	position: absolute
+	bottom: 40%
+	left: 5%
+	z-index: 10
+	display: flex
+	justify-content: space-between
+	width: 90%
+	filter: drop-shadow(0px 0px 24px #FFFFFF) drop-shadow(0px 0px 24px #FFFFFF)
+
+.owl-theme .owl-nav [class*=owl-]:hover
+	background: none
+
+.slider1.owl-theme .owl-dots
+	position: absolute
+	bottom: 0
+	z-index: 120
+	width: 90%
+	left: 5%
+	display: flex 
+	justify-content: space-between
+	bottom: 20px
+	
+
+.slider1.owl-theme .owl-dots:after
+	content: ''
+	width: 100%
+	position: absolute
+	height: 3px
+	background: #FFFFFF
+	opacity: 0.6
+	bottom: 0
+
+button.owl-dot.active
+	width: 25%
+
+.slider1.owl-theme .owl-dots .owl-dot span
+	margin-left: 0
+	margin-right: 0
+	margin-bottom: 0
+	width: 100%
+	height: 30px
+	background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+	border: none
+	border-radius: 0
+
+.title 
+	position: relative
+
+.title__bg-img
+	position: absolute
+	top: 200px
+	left: 0
+	object-fit: cover
+	z-index: -1 
+	@media screen and (max-width: 1350px)
+		top: 80px
+		@media screen and (max-width: 960px)
+			top: 400px
+			left: -300px
+			@media screen and (max-width: 425px)
+				top: 300px
+				width: 400px
+				left: 0
+
+.title__bg-gradient
+	position: absolute
+	z-index: -2
+	width: 100vw
+	height: 860px
+	top: -200px
+	left: 0
+	background: linear-gradient(177.89deg, #FFFFFF 4.32%, #F0F9FF 4.33%, rgba(255, 255, 255, 0) 58.49%, rgba(240, 249, 255, 0) 58.49%)
+
+.category
+	position: relative
+	margin-bottom: 130px
+	@media screen and (max-width: 425px)
+		margin-bottom: 80px
+
+.category__title
+	font-weight: 800
+	font-size: 64px
+	line-height: 130%
+	color: #407B9F
+	text-align: center
+	margin-bottom: 30px
+	@media screen and (max-width: 960px)
+		font-size: 46px
+		@media screen and (max-width: 425px)
+			font-size: 36px
+
+.category__first-row
+	display: flex
+	margin-bottom: 20px
+	@media screen and (max-width: 425px)
+		flex-direction: column
+		margin-bottom: 0
+
+.category__second-row
+	display: flex
+	@media screen and (max-width: 425px)
+		flex-direction: column
+
+.category__block
+	cursor: pointer
+	position: relative
+	border-radius: 20px
+	filter: drop-shadow(0px 9px 14px rgba(0, 0, 0, 0.25))
+	overflow: hidden
+	transition: .3s
+	@media screen and (max-width: 960px)
+		height: 240px
+		@media screen and (max-width: 425px)
+			height: 200px
+			margin-bottom: 20px
+			@media screen and (max-width: 360px)
+				height: 160px
+
+.category__block:hover 
+	filter: drop-shadow(0px 9px 14px rgba(0, 0, 0, 0.35))
+	.category__photo
+		transform: scale(1.1)
+
+
+.category1
+	max-width: 995px
+	margin-right: 20px
+	@media screen and (max-width: 425px)
+		margin-right: 10px
+
+.category3
+	margin-right: 20px
+	@media screen and (max-width: 425px)
+		margin-right: 10px
+.category4
+	margin-right: 20px
+	@media screen and (max-width: 425px)
+		margin-right: 10px
+
+
+.category__name
+	position: absolute
+	width: 315px
+	background: linear-gradient(83.66deg, #25526D 0%, #5FA1CA 100%)
+	padding: 22px
+	top: 0
+	left: 0
+	font-weight: 800
+	font-size: 48px
+	line-height: 130%
+	color: #FFFFFF
+	text-shadow: 0px 0px 24px #FFFFFF
+	text-align: center
+	border-bottom-right-radius: 40px
+	@media screen and (max-width: 960px)
+		font-size: 28px
+		width: 170px
+		@media screen and (max-width: 425px)
+			font-size: 20px
+			width: 200px
+			@media screen and (max-width: 360px)
+				font-size: 16px
+				width: 130px
+
+.category__arrow
+	position: absolute
+	right: 0
+	bottom: 0
+	background: #59B3EA
+	border-top-left-radius: 40px
+	padding: 35px 30px 22px 35px
+	@media screen and (max-width: 360px)
+		padding: 20px
+
+
+.category__arrow-icon
+	width: 37px
+	height: 37px
+	background-repeat: no-repeat
+	background-size: contain
+	background-image: url(../img/svg/category__arrow-icon.svg)
+	filter:  drop-shadow(0px 0px 24px #FFFFFF) drop-shadow(0px 0px 24px #FFFFFF)
+
+
+.category__photo
+	position: relative
+	z-index: -1
+	width: 100%
+	height: 350px
+	object-fit: cover
+	object-position: right 
+	transition: .3s
+
+.category__bg
+	position: absolute
+	bottom: -200px
+	left: 0
+	background-repeat: no-repeat
+	width: 1920px
+	height: 1225px
+	background-image: url(../img/category__bg.png)
+	z-index: -5
+
+.articles
+	position: relative
+	padding-bottom: 90px
+
+
+
+.articles__title
+	font-weight: 800
+	font-size: 64px
+	line-height: 130%
+	color: #407B9F
+	text-align: center
+	margin-bottom: 45px
+	@media screen and (max-width: 960px)
+		font-size: 46px
+		@media screen and (max-width: 425px)
+			margin-bottom: 20px
+			font-size: 36px
+
+
+.articles__articles
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-column-gap: 20px
+	grid-row-gap: 0px
+	align-items: flex-start
+	align-content: flex-start
+	@media screen and (max-width: 960px)
+		grid-template-columns: repeat(2, auto)
+		@media screen and (max-width: 425px)
+			grid-template-columns: repeat(1, auto)
+			grid-row-gap: 0
+
+.articles__article
+	display: inline
+	overflow: hidden
+	cursor: pointer 
+	position: relative
+	background: #FFFFFF
+	box-shadow: 0px 9px 37px rgba(72, 194, 244, 0.5)
+	border-radius: 10px
+	padding: 30px 80px 50px 30px
+	margin-bottom: 20px
+	transition: .3s
+
+.articles__article:hover 
+	box-shadow: 0px 15px 37px rgba(72, 194, 244, 0.8)
+
+.articles__article-firstRow
+	display: flex 
+	align-items: flex-start
+	margin-bottom: 24px
+	@media screen and (max-width: 425px)
+		margin-bottom: 10px
+
+.articles__article-title
+	max-width: 330px
+	font-weight: 800
+	font-size: 36px
+	line-height: 130%
+	color: #59B3EA
+	margin-right: 10px
+	@media screen and (max-width: 425px)
+		font-size: 22px
+
+.articles__article-date
+	font-weight: 300
+	font-size: 18px
+	line-height: 130%
+	color: #407B9F
+
+.articles__article-text
+	max-width: 450px
+	font-weight: 400
+	font-size: 18px
+	line-height: 130%
+	color: #333333
+
+.articles__arrow
+	position: absolute
+	right: 0
+	bottom: 0
+	background: #59B3EA
+	border-top-left-radius: 40px
+	padding: 25px 25px 16px 25px
+
+.articles__arrow-icon
+	width: 26px
+	height: 26px
+	background-repeat: no-repeat
+	background-size: contain
+	background-image: url(../img/svg/articles__arrow-icon.svg)
+	filter:  drop-shadow(0px 0px 14px #FFFFFF) drop-shadow(0px 0px 14px #FFFFFF)
+
+
+.articles__bg
+	width: 100vw
+	height: 426px
+	background-image: url(../img/articles__bg.png)
+	background: no-repeat cover center 
+	position: absolute
+	bottom: 0
+	left: 0
+	z-index: -1
+
+.footer
+	position: relative
+	z-index: 20
+	background: #FFFFFF
+	box-shadow: 0px -4px 37px rgba(72, 194, 244, 0.5)
+
+.footer__row
+	padding-top: 50px
+	display: flex 
+	justify-content: space-between
+	@media screen and (max-width: 960px)
+		flex-wrap: wrap
+
+.footer__item
+	position: relative
+	overflow: hidden
+	display: flex
+	align-items: center
+	font-weight: 600
+	font-size: 20px
+	line-height: 130%
+	color: #59B3EA
+	margin-bottom: 25px
+
+	a 
+		display: flex
+		align-items: center
+
+.footer__phone
+	margin-right: 5px
+
+.footer__icons
+	margin-right: 20px
+
+.footer__search
+	width: 100%
+	background: #FFFFFF
+	border: 2px solid rgba(89, 179, 234, 0.5)
+	border-radius: 10px
+	padding: 7px 10px
+	font-weight: 400
+	font-size: 18px
+	line-height: 130%
+	color: #59B3EA
+	outline: none
+
+.footer__search::placeholder
+	color: #59B3EA
+	opacity: .5
+
+.footer__search-button
+	position: absolute
+	right: 0
+	height: 100%
+	font-weight: 600
+	font-size: 18px
+	line-height: 130%
+	color: #59B3EA
+	text-align: center
+	width: 120px
+	border: none
+	background: rgba(89, 179, 234, 0.1)
+	border-top-right-radius: 10px
+	border-bottom-right-radius: 10px
+
+.footer__cards
+	display: flex 
+	justify-content: space-between
+	margin-top: 40px
+
+.footer__card
+	object-fit: contain
+	width: 15%
+
+.footer__second-row
+	display: flex
+	justify-content: space-between
+	width: 675px
+	margin: auto
+	margin-top: 30px
+	padding-bottom: 30px
+
+.footer__links
+	opacity: .45
+	font-weight: 400
+	font-size: 16px
+	line-height: 130%
+	text-decoration-line: underline
+	color: #59B3EA

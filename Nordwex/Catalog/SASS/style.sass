@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap')
+
+html
+	overflow-x: hidden !important
+
+
+* 
+	box-sizing: border-box
+
+button
+	cursor: pointer
+	color: inherit
+	font-family: 'Roboto', sans-serif
+
+main
+	overflow-x: hidden !important
+
+
+body 
+	font-family: 'Oswald', sans-serif
+	font-family: 'Roboto', sans-serif
+	overflow-x: hidden !important
+	background: #FBFBFB
+
+a 
+	text-decoration: none
+	color: inherit
+
+.__container
+	max-width: 1230px
+	margin: auto 
+	padding: 0 15px
+
+.header__row1
+	background: #E51E21
+	padding: 3px 0
+
+.header__list1
+	display: flex 
+	flex-wrap: wrap 
+	max-width: 870px
+	margin-left: auto
+	@media screen and (max-width: 425px)
+		margin-top: 20px
+
+.header__logo_mob
+	display: none
+	@media screen and (max-width: 425px)
+		display: block
+		margin-top: 10px !important
+
+.header_burger, .burger 
+	display: none
+	width: 50px
+	height: 40px
+	position: relative
+	@media screen and (max-width: 425px)
+		display: block
+		position: absolute
+		top: 25px
+		right: 20px
+
+.burger_line 
+	display: block
+	width: 100%
+	height: 5px
+	background: white
+	position: absolute
+
+
+.burger_line_first 
+	top: 0
+
+.burger_line_second 
+	top: 50%
+	transform: translateY(-50%)
+
+
+.burger_line_third 
+	bottom: 0
+.header__item1
+	display: flex
+	font-weight: 500
+	font-size: 14px
+	line-height: 16px
+	color: #FFFFFF
+	@media screen and (max-width: 425px)
+		margin-bottom: 10px
+		margin-right: 10px
+
+
+	a 
+		display: flex
+		align-items: flex-start
+
+.header__item1:nth-child(2)
+	margin-left: 60px
+	width: 130px
+	@media screen and (max-width: 425px)
+		width: 33%
+		margin-left: 0
+.header__item1:nth-child(3)
+	width: 120px
+	@media screen and (max-width: 425px)
+		width: 33%
+
+
+
+
+.header__time
+	width: 15px
+	height: 15px
+	margin-right: 3px
+	background-image: url(../img/svg/header__time.svg)
+	background-repeat: no-repeat
+
+.header__sravnenie
+	width: 15px
+	height: 15px
+	margin-right: 3px
+	background-image: url(../img/svg/header__sravnenie.svg)
+	background-repeat: no-repeat
+
+.header__izbrannoe
+	width: 15px
+	height: 15px
+	margin-right: 3px
+	background-image: url(../img/svg/header__izbrannoe.svg)
+	background-repeat: no-repeat
+
+.header__login
+	width: 15px
+	height: 15px
+	margin-right: 3px
+	background-image: url(../img/svg/header__login.svg)
+	background-repeat: no-repeat
+
+.header
+	background: white
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15)
+
+.header__row2
+	@media screen and (max-width: 425px)
+		position: fixed
+		width: 100vw
+		height: 100%
+		background: white
+		z-index: 20
+		top: 0
+		transform: translateX(100%)
+		transition: 1s
+		overflow-y: visible
+		overflow-x: hidden
+
+.header__active
+	transform: translateX(0)
+
+.header_nav-close 
+	display: none
+	width: 60px
+	height: 60px
+	position: absolute
+	top: 15px
+	right: 25px
+	z-index: 110
+	@media screen and (max-width: 425px)
+		display: block
+
+	.header_nav-close-line 
+		display: block
+		width: 100%
+		height: 3px
+		background-color: #E51E21
+		position: absolute
+		top: 50%
+
+	.header_nav-close-line:first-child 
+		transform: translateY(-50%) rotate(45deg)
+
+	.header_nav-close-line:last-child 
+		transform: translateY(-50%) rotate(-45deg)
+
+.header__list2
+	display: flex 
+	justify-content: space-between
+	align-items: center
+	padding: 23px 0px 34px 0px
+	@media screen and (max-width: 425px)
+		flex-direction: column
+		align-items: flex-start
+		padding: 10px
+
+.header__logo
+	@media screen and (max-width: 425px)
+		margin-bottom: 20px
+		width: 200px
+
+.search__icon
+	width: 19px
+	height: 19px
+	position: absolute 
+	background-repeat: no-repeat 
+	right: 0
+	top: 0
+	background-image: url(../img/svg/search__icon.svg)
+
+.header__offer
+	max-width: 250px
+	font-weight: 500
+	font-size: 20px
+	line-height: 130%
+	color: #282828
+	margin-bottom: 10px
+	@media screen and (max-width: 425px)
+		font-size: 16px
+		max-width: 200px
+
+input[type='search']::-webkit-search-decoration, 
+input[type='search']::-webkit-search-cancel-button, 
+input[type='search']::-webkit-search-results-button, 
+input[type='search']::-webkit-search-results-decoration 
+	display: none
+.header__search
+	position: relative
+
+
+
+.header__search-input
+	color: black
+	width: 280px
+	border: none
+	outline: none 
+	font-weight: 400
+	font-size: 14px
+	line-height: 140%
+	color: #282828
+	padding-bottom: 5px
+	border-bottom: 1px solid #282828
+	@media screen and (max-width: 425px)
+		margin-bottom: 20px
+
+.header__item2
+	display: flex 
+	justify-content: space-between
+	flex-direction: column
+
+.header__contacts
+	display: flex
+	justify-content: space-between
+	margin-bottom: 15px
+	margin-right: 25px
+	@media screen and (max-width: 425px)
+		flex-direction: column
+
+.header__contact-title
+	font-weight: 300
+	font-size: 13px
+	line-height: 130%
+	color: #B71A1b
+	margin-bottom: 5px
+
+.header__contact-contact
+	display: flex
+	font-weight: 500
+	font-size: 16px
+	line-height: 130%
+	color: #B71A1B
+	margin-right: 30px
+	@media screen and (max-width: 425px)
+		margin-bottom: 20px
+
+
+.header__contact-icon
+	margin-left: 5px
+	display: block
+	width: 16px
+	height: 16px
+	background-image: url(../img/svg/file_copy.svg)
+	background-repeat: no-repeat
+
+.header__buttons
+	width: 520px
+
+
+.header__button
+	padding: 6px
+	width: 48%
+	font-weight: 500
+	font-size: 14px
+	line-height: 130%
+	color: #E51E21
+	background: #FFFFFF
+	border: 2px solid #E51E21
+	border-radius: 10px
+	margin-right: 7px
+	transition: .1s
+	@media screen and (max-width: 425px)
+		width: 80vw
+		margin-bottom: 10px
+		padding: 10px
+
+.header__button:hover 
+	color: white
+	background: #E51E21
+
+.header__row3
+	border-top: 2px solid #E51E21
+	border-bottom: 2px solid #E51E21
+
+.header__nav
+	display: flex 
+	justify-content: space-between
+	@media screen and (max-width: 425px)
+		overflow: auto
+
+.header__link
+	cursor: pointer
+	text-align: center
+	position: relative
+	padding: 10px 24px
+	font-weight: 500
+	font-size: 16px
+	line-height: 130%
+	color: #4E4E4E
+	transition: .2s
+	@media screen and (max-width: 425px)
+		white-space: nowrap
+
+.header__link:hover 
+	background: #E51E21
+	color: white
+	font-weight: 700
+	z-index: 3
+.header__link:hover.header__link:before 
+	display: none
+
+.header__link:before 
+	content: ''
+	width: 1px
+	height: 30px
+	position: absolute
+	background: #B0B0B0
+	left: -2px
+	top: 5px
+
+.header__link:last-child:after
+	content: ''
+	width: 1px
+	height: 30px
+	position: absolute
+	background: #B0B0B0
+	right: 0
+	top: 5px
+
+.page
+	position: relative
+
+.catalog__bg
+	top: -238px
+	left: -125px
+	width: 1356px
+	height: 1718px
+	z-index: -1
+	position: absolute
+	background-repeat: no-repeat
+	background-size: contain 
+	background-image: url(../img/svg/catalog__bg.svg)
+	@media screen and (max-width: 768px)
+		top: -260px
+		@media screen and (max-width: 425px)
+			display: none
+
+
+.page__title
+	margin-top: 30px
+	font-family: 'Oswald'
+	font-style: normal
+	font-weight: 500
+	font-size: 36px
+	line-height: 130%
+	color: #B71A1B
+	margin-bottom: 8px
+	@media screen and (max-width: 768px)
+		font-size: 30px
+
+.page__breadcrumbs
+	display: flex 
+	align-items: center 
+	margin-bottom: 8px
+
+.page__breadcrumbs-text
+	font-weight: 400
+	font-size: 15px
+	line-height: 130%
+	color: #B8B8B8
+	margin-right: 10px
+	@media screen and (max-width: 768px)
+
+.page__breadcrumbs-arrow
+	margin-right: 10px
+	width: 30px
+	height: 8px
+	background-repeat: no-repeat
+	background-image: url(../img/svg/breadcrumbs__arrow.svg)
+
+.page__text
+	font-weight: 400
+	font-size: 14px
+	line-height: 140%
+	color: #5E5E5E
+	@media screen and (max-width: 768px)
+		font-size: 13px
+
+.catalog__row
+	position: relative
+	margin-top: 50px
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	-moz-user-select: none
+	-khtml-user-select: none
+	-webkit-user-select: none
+	user-select: none
+	@media screen and (max-width: 425px)
+		flex-direction: column
+		@media screen and (max-width: 425px)
+			margin-top: 20px
+
+.catalog__filtr
+	background: #FBFBFB
+	border: 2px solid #DDDDDD
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+	padding-top: 5px
+	width: 270px
+
+.filtr__title
+	font-family: 'Oswald'
+	font-style: normal
+	font-weight: 500
+	font-size: 30px
+	line-height: 130%
+	color: #B71A1B
+	margin-bottom: 10px
+	margin-left: 15px
+
+
+.filtr__class
+	cursor: pointer
+	display: flex 
+	align-items: center
+	padding: 10px 17px
+	border-top: 1px solid #DDDDDD
+	font-weight: 500
+	font-size: 18px
+	line-height: 130%
+	color: #5E5E5E
+
+.filtr__classfirst-child
+	border-top: 1px solid #DDDDDD
+
+.filtr__arrow
+	width: 12px
+	height: 7px
+	background-repeat: no-repeat
+	background-size: contain
+	background-image: url(../img/svg/filtr__arrow.svg)
+	margin-right: 10px
+	transition: .3s
+
+.filtr_active
+	color: #B71A1B
+
+.filtr__inputs
+	margin-top: 5px
+	padding-left: 38px
+	padding-bottom: 10px
+
+.filtr__input
+	display: flex
+	align-items: center
+	padding-left: 33px
+	padding-bottom: 10px
+
+.filtr__checkbox
+	display: none
+	width: 20px
+	height: 20px
+	background: #FBFBFB
+	border: 1px solid #5E5E5E
+	border-radius: 5px
+	margin-right: 10px
+
+.fake
+	display: block
+	width: 20px
+	height: 20px
+	background: #FBFBFB
+	border: 1px solid #5E5E5E
+	border-radius: 5px
+	margin-right: 10px
+	position: relative
+
+.label
+	cursor: pointer
+	display: flex
+	padding-bottom: 10px
+
+.label:last-child
+	padding-bottom: 0
+
+.filtr__checkbox:checked + .fake:before
+	opacity: 1
+
+.filtr__checkbox:checked + .fake
+	border: 1px solid #B71A1B
+
+.filtr__checkbox:checked ~ .filtr__input-text
+	color: #B71A1B
+
+
+.fake:before
+	content: ''
+	position: absolute
+	top: -5px
+	left: -3px
+	display: block
+	opacity: 0
+	width: 19px
+	height: 23px
+	background-size: contain
+	background-image: url(../img/svg/checkbox.svg)
+	transition: .2s
+
+.filtr__input-text
+	margin-top: 1px
+	font-weight: 500
+	font-size: 16px
+	line-height: 130%
+	color: #5E5E5E
+	width: 200px
+
+.hidden
+	display: none
+
+.arrow_active
+	transform: rotate(180deg)
+	filter: invert(14%) sepia(99%) saturate(4472%) hue-rotate(351deg) brightness(74%) contrast(92%)
+
+.Catalog
+	margin-bottom: 60px
+
+.catalog__catalog
+	margin-left: 30px
+	width: 900px
+	@media screen and (max-width: 425px)
+		margin-left: 0px
+		margin-top: 30px
+
+.catalog__cards
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	@media screen and (max-width: 425px)
+		flex-direction: column
+
+.catalog__card
+	width: 285px
+	background-color: #FFFFFF
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15)
+	background-image: url(../img/card__bg.png)
+	background-position: 0px 110px
+	margin-bottom: 20px
+
+.catalog__card:hover 
+	background: #E51E21
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.35)
+	background-image: url(../img/card__bg_hover.png)
+	background-position: 0px 110px
+	.catalog__card-title
+		color: white 
+	.catalog__card-about
+		color: white
+	.catalog__card-characteristic
+		color: white
+	.catalog__card-characteristic:nth-child(odd)
+		background: #C71A1A
+
+.catalog__img
+	width: 285px
+	height: 270px
+	object-fit: cover
+
+.catalog__card_text
+	margin-top: 8px
+
+.catalog__card-title
+	padding-left: 10px
+	padding-right: 10px
+	font-weight: 500
+	font-size: 20px
+	line-height: 130%
+	color: #282828
+	margin-bottom: 3px
+
+.catalog__card-about
+	padding-left: 10px
+	padding-right: 10px
+	font-weight: 400
+	font-size: 13px
+	line-height: 130%
+	color: #4D4D4D
+	margin-bottom: 5px
+
+.catalog__card-characteristic
+	padding: 5px 10px
+	font-weight: 400
+	font-size: 13px
+	line-height: 140%
+	color: #565656
+
+.catalog__card-characteristic:nth-child(odd)
+	background: #F1F1F1
+
+.catalog__card-characteristic:last-child
+	margin-bottom: 8px
+
+.catalog__more
+	margin-top: 25px
+	margin-bottom: 30px
+	width: 285px
+	border: 1px solid #B71A1B
+	padding: 9px
+	font-weight: 500
+	font-size: 18px
+	line-height: 130%
+	color: #B71A1B
+	background: inherit
+
+.catalog__more:hover
+	color: white
+	background: #B71A1B
+
+.catalog__pagination
+	display: flex
+	align-items: center
+
+.catalog__pagination-arrowLeft
+	width: 60px
+	height: 22px
+	background-repeat: no-repeat
+	background-image: url(../img/svg/pagination__arrow.svg)
+	background-position: center
+	border: none
+	padding: 0 15px
+	border-left: 1px solid #D9D9D9
+	background-color: transparent
+
+.catalog__pagination-arrowRight
+	transform: rotate(180deg)
+	width: 60px
+	height: 22px
+	background-repeat: no-repeat
+	background-image: url(../img/svg/pagination__arrow.svg)
+	background-position: center
+	border: none
+	padding: 0 15px
+	border-left: 1px solid #D9D9D9
+	background-color: transparent
+
+.catalog__pagination-cifer
+	display: block
+	padding: 0px 15px
+	border: none
+	border-right: 1px solid #787878
+	background: none
+	font-weight: 700
+	font-size: 16px
+	line-height: 130%
+	color: #313131
+
+.frstchld
+	border-left: 1px solid #787878
+	
+
+
+.footer
+	padding-top: 50px
+	padding-bottom: 20px
+	background: #F5F5F5
+	border-top: 2px solid #E51E21
+	box-shadow: 0px -4px 16px rgba(0, 0, 0, 0.15)
+
+.footer__row
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	align-items: center
+
+.footer__title
+	font-weight: 500
+	font-size: 20px
+	line-height: 130%
+	color: #E51E21
+	margin-bottom: 20px
+
+.footer__item
+	font-weight: 500
+	font-size: 18px
+	line-height: 130%
+	color: #5F5F5F
+	margin-bottom: 20px
+	@media screen and (max-width: 425px)
+		font-size: 16px
+		margin-bottom: 15px
+
+.footer__list:last-child
+	width: 295px
+
+.footer__logo
+	margin-right: 20px
+	@media screen and (max-width: 425px)
+		margin-bottom: 20px
+
+.footer__list
+	margin-right: 20px
+	@media screen and (max-width: 425px)
+		margin-bottom: 20px
+
+.footer .header__contact-contact
+	color: #5F5F5F
+	font-size: inherit
+
+.footer .header__contact-icon
+	background-image: url(../img/svg/footer__contacticon.svg)
